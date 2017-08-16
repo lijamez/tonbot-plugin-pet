@@ -1,4 +1,4 @@
-package com.tonberry.tonbot.modules.pet;
+package net.tonbot.plugin.pet;
 
 import java.util.Set;
 
