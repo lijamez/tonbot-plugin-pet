@@ -5,8 +5,9 @@ import java.util.Set;
 import com.google.common.collect.ImmutableSet;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.tonberry.tonbot.common.TonbotPlugin;
-import com.tonberry.tonbot.common.TonbotPluginArgs;
+
+import net.tonbot.common.TonbotPlugin;
+import net.tonbot.common.TonbotPluginArgs;
 
 public class PetPlugin extends TonbotPlugin {
 

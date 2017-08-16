@@ -2,7 +2,8 @@ package net.tonbot.plugin.pet;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.AbstractModule;
-import com.tonberry.tonbot.common.Prefix;
+
+import net.tonbot.common.Prefix;
 
 class PetModule extends AbstractModule {
 
