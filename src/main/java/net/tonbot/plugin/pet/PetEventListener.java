@@ -30,9 +30,11 @@ class PetEventListener {
 	);
 
 	private final String prefix;
+	private final BotUtils botUtils;
 
 	@Inject
-	public PetEventListener(@Prefix String prefix) {
+	public PetEventListener(@Prefix String prefix, BotUtils botUtils) {
+		this.botUtils = Preconditions.checkNotNull(botUtils, "botUtils must be non-null.");
 		this.prefix = Preconditions.checkNotNull(prefix, "prefix must be non-null.");
 	}
 
@@ -56,7 +58,7 @@ class PetEventListener {
 			String emoteUrl = pickRandomEmote();
 			embedBuilder.withImage(emoteUrl);
 
-			BotUtils.sendEmbeddedContent(event.getChannel(), embedBuilder.build());
+			botUtils.sendEmbed(event.getChannel(), embedBuilder.build());
 		}
 	}
 

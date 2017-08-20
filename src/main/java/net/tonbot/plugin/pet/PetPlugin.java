@@ -15,7 +15,7 @@ public class PetPlugin extends TonbotPlugin {
 
 	public PetPlugin(TonbotPluginArgs args) {
 		super(args);
-		this.injector = Guice.createInjector(new PetModule(args.getPrefix()));
+		this.injector = Guice.createInjector(new PetModule(args.getPrefix(), args.getBotUtils()));
 	}
 
 	@Override
