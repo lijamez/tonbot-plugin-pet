@@ -26,7 +26,8 @@ class PetEventListener {
 	private static final List<String> EMOTE_URLS = ImmutableList.of(
 			"https://cdn.discordapp.com/emojis/317088491370708992.png", // :blobMelt:
 			"https://cdn.discordapp.com/emojis/317089314196422657.png", // :blobAww:
-			"https://cdn.discordapp.com/emojis/316447368268480512.png" // :blobUwu:
+			"https://cdn.discordapp.com/emojis/316447368268480512.png", // :blobUwu:
+			"https://cdn.discordapp.com/emojis/319329339680489472.png" // :blobPats:
 	);
 
 	private final String prefix;
